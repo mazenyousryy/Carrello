@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SplashScreen">
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/splashAnim"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp"
+        app:lottie_fileName="CarrelloSplash.json"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true">
+    </com.airbnb.lottie.LottieAnimationView>
+
+    <TextView
+        android:id="@+id/splashTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/splashAnim"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:fontFamily="@font/aclonica"
+        android:text="Carrello"
+        android:textSize="50sp"
+        android:textColor="@color/secondaryBlue"
+        android:textStyle="bold">
+    </TextView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/splashTxt"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="230dp"
+        android:fontFamily="sans-serif-smallcaps"
+        android:text="Developed By CTRL+Z"
+        android:textColor="@color/lightGreen"
+        android:textSize="10dp"></TextView>
+
+
+</RelativeLayout>
